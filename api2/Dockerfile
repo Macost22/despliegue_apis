@@ -4,7 +4,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 COPY . /app
 
 # Exponer el puerto 8001
-EXPOSE 8002
+EXPOSE 80
 
 # Comando para iniciar la aplicación
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8002"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
